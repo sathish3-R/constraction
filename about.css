@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{     
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+
+.intro{
+    height: 500px;
+    width: 100%;
+    background-image:url('./back2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 90px;
+}
+.navv{
+    width: 90%;
+    height: 70px;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navlef i{
+    display: none;
+}
+.navrigh{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navrigh>a{
+    position: relative;
+    width: max-content;
+    display: inline;
+}
+.navrigh>a::after{
+    content: '';
+    background:linear-gradient(to right ,purple, #dff36d);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+}
+.navrigh>a:hover::after{
+    width: 100%;
+}
+.navlogo{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.intcont{
+    position: relative;
+    bottom: -30px;
+}
+
+.navv input{
+    display: none;
+}
+.marquee {
+    text-align: center;
+}
+
+.marq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.geek1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+}
+.wholediv {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card1 {
+    width: 850px;
+    height: 450px;
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    position: relative;
+    left: -150px;
+}
+
+.left i {
+    margin-top: 20px;
+}
+
+span {
+    margin-left: 10px;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+footer i {
+    margin-left: 10px;
+}
+
+footer i:nth-child(1) {
+    margin-left: 0px;
+}
+
+.right {
+    width: 60%;
+    position: relative;
+    left: -80px;
+}
+
+.right>h2 {
+    margin-bottom: 20px;
+}
+
+.right1,
+.right2 {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.right1 input,
+.right2 input {
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.right>input {
+    width: 530px;
+    padding: 50px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.right button {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+
+.left:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: gray;
+}
+
+@media screen and (max-width:600px) {
+    .wholediv {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .card1 {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .left {
+        width: 100%;
+        left: 0px;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        left: 0px;
+    }
+
+    .right1,
+    .right2 {
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+
+    }
+
+    .right1 input,
+    .right2 input {
+        width: 100%;
+    }
+
+    .right input {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1200px) {
+    .wholediv{
+        width: 100%;
+    }
+    .card1{
+        width: 70%;
+        gap: 20px;
+        height:80% ;
+    }
+    .left{
+        width: 40%;
+        height: 100%;
+        left: -80px;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        left: -20px;
+    }
+    .right1,.right2{
+        width: 100%;
+    }
+    .right1 input,.right2 input{
+        width: 100%;
+    }
+    .right input{
+        width: 100%;
+    }
+    
+    
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:950px) {
+    .navrigh{
+        width: 65%;
+    }
+    .team, .team1, .team2, .team3{
+        width: 280px!important;
+    }  
+}
+
+@media only screen and (max-width:800px) {
+    .navrigh{
+        padding: 20px;
+        width: 25%;
+        border-radius: 20px;
+        min-height: 250px;
+        background-color: rgba(197, 175, 197, 0.459);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -200px;
+        top: 75px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    input:checked ~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+    .navrigh button{
+        height: 40px!important;
+    }
+     .navv{
+        flex-direction: column;
+     }
+    .navlef{
+        width: 100%;
+    }   
+    .navlef i{
+        padding-top: 10px;
+        font-size: 40px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .navrigh{
+        width: 40%;
+    }  
+}
